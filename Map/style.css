@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+}
+
+body {
+  padding: 50px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  background: rgb(199, 212, 197);
+  padding: 20px 0;
+  color: rgb(104, 105, 104);
+}
+
+.container {
+  margin: 20px 20px 20px 530px;
+  display: flex;
+  align-items: flex-start;
+}
+
+
+
+input[type="text"],
+input[type="Last Name"],
+input[type="email"] {
+  width: 90%;
+  border: none;
+  line-height: 30px;
+  margin: 15px 0;
+  border-radius: 4px;
+  padding-left: 15px;
+}
+
+textarea {
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .container { 
+    flex-direction: column; 
+  }
+}
+
+
+
+
+
+/*part2*/
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+}
+
+body {
+  padding: 40px;
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  background: rgb(199, 212, 197);
+  padding: 20px 0;
+  color: rgb(104, 105, 104);
+}
+
+
+div {
+  margin-bottom: 20px;
+}
+
+fieldset {
+  font:1.3rem 'Fira Sans', sans-serif;
+  margin: 50px 500px;
+  background: #dfe6e4;
+  border: 3px solid;
+  padding: 30px;
+}
+
+
+label {
+    font: 1.5rem 'Fira Sans', sans-serif;
+}
+
+input {
+    margin: .5rem;
+}
+
+
+@media screen and (max-width: 600px) {
+  .container { 
+    flex-direction: column; 
+  }
+}
+
+/* part3*/
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+}
+
+body {
+  padding: 40px;
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  background: rgb(199, 212, 197);
+  padding: 20px 0;
+  color: rgb(104, 105, 104);
+}
+
+
+div {
+  margin-bottom: 20px;
+}
+
+li a {text-decoration : none; color : #2d2f31;}
+
+nav {
+  width : 300px; 
+  background: #d9d9d9;
+  margin : 40px auto; 
+}
+
+span {
+  padding : 30px;
+  background : #2d2f31; 
+  color : white;
+  font-size : 1.2em;
+  font-variant : small-caps;
+  cursor : pointer;
+  display: block;
+}
+
+span::after {
+  float: right;
+  right: 10%;
+  content: "+";
+}
+
+.slide {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  text-align: center;
+  transition: height .4s ease;
+}
+
+.slide li {padding : 30px;}
+
+#touch {position: absolute; opacity: 0; height: 0px;}    
+
+#touch:checked + .slide {height: 300px;} 
+
+button {
+  color: #FFF;
+  background: #68a193;
+  border: none;
+  margin: 0 20px 20px 20px;
+  line-height: 30px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 600px) {
+  .container { 
+    flex-direction: column; 
+  }
+}
+
+
+/* Solid border */
+hr.solid {
+    border-top: px solid #bbb;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    background: rgb(199, 212, 197);
+}
+
+
+
+
+
+
+/* MAP*/
+
+
+
+ #map {
+    height: 50%;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  /* 
+   * Optional: Makes the sample page fill the window. 
+   */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #description {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  
+  #infowindow-content .title {
+    font-weight: bold;
+  }
+  
+  #infowindow-content {
+    display: none;
+  }
+  
+  #map #infowindow-content {
+    display: inline;
+  }
+  
+  .pac-card {
+    background-color: #fff;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    padding: 0 0.5em;
+    font: 400 18px Roboto, Arial, sans-serif;
+    overflow: hidden;
+    font-family: Roboto;
+    padding: 0;
+  }
+  
+  #pac-container {
+    padding-bottom: 12px;
+    margin-right: 12px;
+  }
+  
+  .pac-controls {
+    display: inline-block;
+    padding: 5px 11px;
+  }
+  
+  .pac-controls label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  
+  #pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 400px;
+  }
+  
+  #pac-input:focus {
+    border-color: #4d90fe;
+  }
+  
+  #title {
+    color: #fff;
+    background-color: #4d90fe;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 12px;
+  }
+  
+  #target {
+    width: 345px;
+  }
+  

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Places Search Box</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <!-- <input
+      id="pac-input"
+      class="controls"
+      type="text"
+      placeholder="Search Box"
+    />
+    <div id="map"></div> -->
+
+           
+    <form action="">
+      <h2>Tell me your favorite Green Space in NYC ^_^</h2>
+      <main class="container">
+        <!--     Left -->
+        <section class="left">
+          <input class="first" type="text" placeholder="First Name" />
+          <input class="last" type="text" placeholder="Last Name" />
+          <input class="email" type="email" placeholder="Email address" />
+        
+        
+
+      </main>
+  
+   
+    </form>
+
+    <input
+    id="pac-input"
+    class="controls"
+    type="text"
+    placeholder="Search Box"
+  />
+  <div id="map"></div>
+
+    <hr class="solid">
+
+
+
+    <form action="">
+      <h2>Is the a public or private green space for everyone access? </h2>
+     <fieldset>
+      <legend>Choose your monster's features:</legend>
+  
+      <div>
+        <input type="checkbox" id="public" name="Public"
+               checked>
+        <label for="public">Public</label>
+      </div>
+  
+      <div>
+        <input type="checkbox" id="private" name="private">
+        <label for="private">Private</label>
+      </div>
+       
+      <div>
+        <input type="checkbox" id="limitedopen" name="limitiedopen">
+        <label for="limitedopen">Limited Open</label>
+      </div>
+  </fieldset>
+  
+
+    </form>
+
+    <hr class="solid">
+
+
+
+
+    <form action="">
+      <h2>Is the a public or private green space for everyone access? </h2>
+      
+     <nav>
+  
+    <label for="touch"><span>Interest</span></label>               
+    <input type="checkbox" id="touch"> 
+  
+    <ul class="slide">
+      <li><a href="#">Execrise</a></li> 
+      <li><a href="#">Social</a></li>
+      <li><a href="#">Relaxtion</a></li>
+      <li><a href="#">Escape from Heat</a></li>
+    </ul>
+  
+  </nav>
+      
+      <button type="submit">submit</button>
+
+<script src = "main.js"></script>
+
+
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcFfP8vB7fT2eOLDHMcT2GqfcW9cSAAHs&callback=initAutocomplete&libraries=places&v=weekly"
+      defer
+    ></script>
+  </body>
+</html>
